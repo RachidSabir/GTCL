@@ -9,7 +9,7 @@
     <title>Modifier une Tâche</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Modifier une Tache:</h1>
 
     <form action="<%= request.getContextPath() %>/TacheServlet" method="post">
 	    <input type="hidden" name="_method" value="put">
