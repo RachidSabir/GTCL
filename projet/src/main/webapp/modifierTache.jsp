@@ -13,7 +13,6 @@
 
     <form action="<%= request.getContextPath() %>/TacheServlet" method="post">
 	    <input type="hidden" name="_method" value="put">
-	    ID: <input type="text" id="tacheId" name="tacheId" value="<%= request.getParameter("tacheId") %>" readonly><br>
 	    Nouveau titre de la tâche: <input type="text" id="tacheTitre" name="tacheTitre" value="<%= request.getParameter("tacheTitre") %>" required><br>
 	    Nouvelle description de la tâche: <input type="text" id="tacheDescription" name="tacheDescription" value="<%= request.getParameter("tacheDescription") %>" required><br>
 	    <input type="submit" value="Enregistrer">
