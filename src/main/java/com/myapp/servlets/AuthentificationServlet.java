@@ -17,10 +17,7 @@ public class AuthentificationServlet extends HttpServlet {
     public AuthentificationServlet() {
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.sendRedirect("Athentification.jsp");
-    }
-
+   
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String pwd = request.getParameter("pwd");
