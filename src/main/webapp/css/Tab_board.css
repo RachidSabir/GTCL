@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+#dashboard-form.expanded {
+    width: 100%; /* Or any other size you want */
+    transition: width 0.3s ease;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px); /* Adjusted for four items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.inner {
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.descr, .escr {
+    font-size: 16px;
+    color: #777;
+}
+
+.static {
+    display: flex;
+    flex-direction: row; /* Changed to row */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Added to ensure canvases are spaced out */
+}
+
+/* Ensure canvases take full width of the container */
+canvas {
+	flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .item {
+        width: calc(50% - 40px); /* Two items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        width: 100%; /* One item per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
