@@ -1,0 +1,13 @@
+com\myapp\models\ProjetService.class
+com\myapp\servlets\Formulaire.class
+com\myapp\servlets\AuthentificationServlet.class
+com\myapp\models\Projet.class
+com\myapp\servlets\TacheServlet.class
+com\myapp\servlets\Filter_jee.class
+com\myapp\servlets\ProjetServlet.class
+com\myapp\models\TacheService.class
+com\myapp\models\Tache.class
+com\myapp\models\Utilisateur.class
+com\myapp\util\HibernateUtil.class
+com\myapp\models\TestAPP.class
+com\myapp\models\UtilisateurService.class
