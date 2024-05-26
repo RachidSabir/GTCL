@@ -1,4 +1,4 @@
-Conception d'un Gestionnaire de Tache Collaboratif en Ligne
+Conception du Gestionnaire de Tache Collaboratif en Ligne
 
 ***********************
 A. Diagramme de classe:
